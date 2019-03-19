@@ -1,4 +1,2 @@
-dotnet test .\TripServicesKata.Test\TripServicesKata.Test.csproj
-
-dotnet build .\TripServiceKata\TripServiceKata.csproj
-
+# design-pattern-moc
+Etude et apprentissage des design pattern
