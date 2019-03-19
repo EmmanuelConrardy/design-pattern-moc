@@ -1,0 +1,9 @@
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\bin\Debug\netstandard2.0\AvionKataDesign.deps.json
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\bin\Debug\netstandard2.0\AvionKataDesign.dll
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\bin\Debug\netstandard2.0\AvionKataDesign.pdb
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.csprojAssemblyReference.cache
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.csproj.CoreCompileInputs.cache
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.AssemblyInfoInputs.cache
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.AssemblyInfo.cs
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.dll
+C:\Users\emman\source\repos\design-pattern-moc\AvionKataDesign\AvionKataDesign\obj\Debug\netstandard2.0\AvionKataDesign.pdb
