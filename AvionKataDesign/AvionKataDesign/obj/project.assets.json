@@ -30,7 +30,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "1rqsH9BlbEoSXLFzFvadWzD1uBN1rtpO5JOgTPcMiNkI/Wq/HcDss297YNZDI6ep+o0G0XDyhF29moDPVw2NCw==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -179,30 +179,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emman\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/florianmazuy/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign\\AvionKataDesign.csproj",
+      "projectUniqueName": "/Users/florianmazuy/Documents/design-pattern-moc/AvionKataDesign/AvionKataDesign/AvionKataDesign.csproj",
       "projectName": "AvionKataDesign",
-      "projectPath": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign\\AvionKataDesign.csproj",
-      "packagesPath": "C:\\Users\\emman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign\\obj\\",
+      "projectPath": "/Users/florianmazuy/Documents/design-pattern-moc/AvionKataDesign/AvionKataDesign/AvionKataDesign.csproj",
+      "packagesPath": "/Users/florianmazuy/.nuget/packages/",
+      "outputPath": "/Users/florianmazuy/Documents/design-pattern-moc/AvionKataDesign/AvionKataDesign/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\emman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/florianmazuy/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

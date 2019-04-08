@@ -17,5 +17,10 @@ namespace AvionKataDesign {
         {
             this.avionPosition = position;
         }
+
+        internal void sendMessage(string position)
+        {
+            Console.WriteLine(position);
+        }
     }
 }
