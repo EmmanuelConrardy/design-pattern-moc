@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AvionKataDesign.Test
@@ -30,5 +32,51 @@ namespace AvionKataDesign.Test
             //Assert
             Assert.AreEqual("0,0", tourDeControle.GetMessagePosition());
         }
+
+        [TestMethod]
+        public void Test_When_Avion_With_Pilotes_And_Passengers()
+        {
+            //Arrange
+            var avion = Avion.GetInstance();
+            var passengers = new List<Human> {
+                new Pilote(),
+                new Pilote(),
+                new Passenger(),
+                new Passenger(),
+                new Passenger(),
+                new Passenger()
+            };
+            //Add humans
+            avion.BoardingWith(passengers);
+
+            //Assert
+            Assert.AreEqual("0,0", tourDeControle.GetMessagePosition());
+        }
+
+        [TestMethod]
+        public void Test_Pilote()
+        {
+            var pilote = new Pilote();
+
+            Assert.IsTrue(pilote.CanAccessToCockpit);
+        }
+
+        [TestMethod]
+        public void Test_Passenger()
+        {
+            var passenger = new Passenger();
+
+            Assert.IsFalse(passenger.CanAccessToCockpit);
+        }
+
+        [TestMethod]
+        public void Test_Stewart()
+        {
+            var stewart = new Stewart();
+
+            Assert.IsFalse(stewart.CanAccessToCockpit);
+        }
     }
+
+    
 }
