@@ -1772,7 +1772,7 @@
       ]
     },
     "Microsoft.NETCore.App/2.1.0": {
-      "sha512": "JNHhG+j5eIhG26+H721IDmwswGUznTwwSuJMFe/08h0X2YarHvA15sVAvUkA/2Sp3W0ENNm48t+J7KTPRqEpfA==",
+      "sha512": "AvT774nTFgU8cYcGO9j1EMwuayKslxqYTurg32HGpWa2hEYNuW2+XgYVVNcZe6Ndbr84QX6fwaOZfd5n+1m2OA==",
       "type": "package",
       "path": "microsoft.netcore.app/2.1.0",
       "files": [
@@ -2038,7 +2038,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.1.0": {
-      "sha512": "vMn8V3GOp/SPOG2oE8WxswzAWZ/GZmc8EPiB3vc2EZ6us14ehXhsvUFXndYopGNSjCa9OdqC6L6xStF1KyUZnw==",
+      "sha512": "f/47I60Wg3SrveTvnecCQhCZCAMYlUujWF15EQ/AZTqF/54qeEJjbCIAxKcZI8ToUYzSg6JdfrHggsgjCyCE9Q==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.1.0",
       "files": [
@@ -2052,7 +2052,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostPolicy/2.1.0": {
-      "sha512": "vBUwNihtLUVS2HhO6WocYfAktRmfFihm6JB8/sJ53caVW+AelvbnYpfiGzaZDpkWjN6vA3xzOKPu9Vu8Zz3p8Q==",
+      "sha512": "p50yZYKzhH64lmArJgoKjtvsNehECa+/sAuOQzZh5uDNBTbRKxjN8IXP1e517xdVsgrFcSNxSEVDKZIOWVjGcQ==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.1.0",
       "files": [
@@ -2066,7 +2066,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostResolver/2.1.0": {
-      "sha512": "o0PRql5qOHFEY3d1WvzE+T7cMFKtOsWLMg8L1oTeGNnI4u5AzOj8o6AdZT3y2GxFA1DAx7AQ9qZjpCO2/bgZRw==",
+      "sha512": "fS9D8a+y55n6mHMbNqgHXaPGkjmpVH9h97OyrBxsCuo3Z8aQaFMJ5xIfmzji2ntUd/3truhMbSgSfIelHOkQpg==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.1.0",
       "files": [
@@ -2080,7 +2080,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA==",
+      "sha512": "GmkKfoyerqmsHMn7OZj0AKpcBabD+GaafqphvX2Mw406IwiJRy1pKcKqdCfKJfYmkRyJ6+e+RaUylgdJoDa1jQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
@@ -2097,7 +2097,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/2.1.0": {
-      "sha512": "x188gIZXOwFXkPXyGavEcPGcR6RGvjFOES2QzskN4gERZjWPN34qhRsZVMC0CLJfQLGSButarcgWxPPM4vmg0w==",
+      "sha512": "etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
       "type": "package",
       "path": "microsoft.netcore.targets/2.1.0",
       "files": [
@@ -3753,7 +3753,7 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "7i/p+HnCbu7+EB9XGI4FJo93luMTzFAwD5hVZFCwPo5dVadT4VncQ7yHojm0APuUBPJ9zmeowYxytPtCg/YCqQ==",
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
@@ -4146,7 +4146,7 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "qOeWaAAc7hEd81JCJajCy85vUXyL7naQcvGTvcOveeIhCqgkB5RyJN248IqPw/6snSgxDnTuUhaunzz2FqYZBQ==",
+      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
@@ -4393,7 +4393,7 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "llLejPeupylUYj2/JByxNpLZus614nEwfboxPYRoQncuwZQI7CLn6DXsSRhJdDXSzP7/NATgR5yaWXDoDvc00w==",
+      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
@@ -4558,7 +4558,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "7ZTD9GuMSkchquusgzInGvAP0AQSp2/rA9R+Cddv8sdNcfXtgtm1YN9YZN4btK1ym8bOaMX19BqqsywWuGkKaw==",
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -4973,7 +4973,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.1.1": {
-      "sha512": "HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
+      "sha512": "+mqQrrJsDx5yxIq+wLYKHr6pVc08ETOzJFwE3QvWmEwM4CU5RNKGdqu47bk+HGScaT58ZCVFmjwpp0OBUxy1QA==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "files": [
@@ -5046,7 +5046,7 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "zwFGXciuwkND7ITIf99/t3tRSM4+zxqATFEzQuy0SU0KMwdx5NgSKeg77gqqW6JXIXfKKfLANWoBmqWUf06YTQ==",
+      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
@@ -5332,7 +5332,7 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "THrEhLdWSezJzi/XA3IP2VaFIFtGUfEJIXzUcDzAcbMhx8PrcDOKS1bBz+urhTo3cqclnDhio5VJdmHDuxRd8w==",
+      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
@@ -5832,37 +5832,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emman\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/lays/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign.Test\\AvionKataDesign.Test.csproj",
+      "projectUniqueName": "/Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/AvionKataDesign.Test.csproj",
       "projectName": "AvionKataDesign.Test",
-      "projectPath": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign.Test\\AvionKataDesign.Test.csproj",
-      "packagesPath": "C:\\Users\\emman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign.Test\\obj\\",
+      "projectPath": "/Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/AvionKataDesign.Test.csproj",
+      "packagesPath": "/Users/lays/.nuget/packages/",
+      "outputPath": "/Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\emman\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lays/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign\\AvionKataDesign.csproj": {
-              "projectPath": "C:\\Users\\emman\\source\\repos\\design-pattern-moc\\AvionKataDesign\\AvionKataDesign\\AvionKataDesign.csproj"
+            "/Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign/AvionKataDesign.csproj": {
+              "projectPath": "/Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign/AvionKataDesign.csproj"
             }
           }
         }

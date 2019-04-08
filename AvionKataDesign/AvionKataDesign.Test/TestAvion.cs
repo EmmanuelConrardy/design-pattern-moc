@@ -11,8 +11,8 @@ namespace AvionKataDesign.Test
         public void Test_Avion_Singleton()
         {
             //Arrange
-            var avion = Avion.GetInstance();
-            var avion2 = Avion.GetInstance();
+            var avion = Plane.GetInstance();
+            var avion2 = Plane.GetInstance();
 
             //Assert
             Assert.AreSame(avion, avion2);
@@ -22,12 +22,12 @@ namespace AvionKataDesign.Test
         public void Test_When_Avion_Emit_Position_Radar_Should_Return_Message()
         {
             //Arrange
-            var avion = Avion.GetInstance();
+            var avion = Plane.GetInstance();
             var tourDeControle = new TourDeControle();
-            avion.Attach(tourDeControle);
+            avion.KidnapR2D2(tourDeControle);
             
             //Act
-            avion.EmitPosition();
+            avion.SendMessageR2D2();
 
             //Assert
             Assert.AreEqual("0,0", tourDeControle.GetMessagePosition());
@@ -37,7 +37,8 @@ namespace AvionKataDesign.Test
         public void Test_When_Avion_With_Pilotes_And_Passengers()
         {
             //Arrange
-            var avion = Avion.GetInstance();
+            var avion = Plane.GetInstance();
+            var tourDeControle = new TourDeControle();
             var passengers = new List<Human> {
                 new Pilote(),
                 new Pilote(),
@@ -47,7 +48,7 @@ namespace AvionKataDesign.Test
                 new Passenger()
             };
             //Add humans
-            avion.BoardingWith(passengers);
+            avion.R2D2Pit(passengers);
 
             //Assert
             Assert.AreEqual("0,0", tourDeControle.GetMessagePosition());
