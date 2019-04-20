@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AvionKataDesign.Test
@@ -34,23 +35,24 @@ namespace AvionKataDesign.Test
         }
 
         [TestMethod]
-        public void Test_When_Avion_With_Pilotes_And_Passengers()
+        public void Test_When_Avion_With_Pilotes_Stewart_Passengers()
         {
             //Arrange
             var avion = Avion.GetInstance();
             var passengers = new List<Human> {
                 new Pilote(),
                 new Pilote(),
-                new Passenger(),
+                new Stewart(),
                 new Passenger(),
                 new Passenger(),
                 new Passenger()
             };
-            //Add humans
+
+            //Act
             avion.BoardingWith(passengers);
 
             //Assert
-            Assert.AreEqual("0,0", tourDeControle.GetMessagePosition());
+            Assert.AreEqual(6, avion.DisplayHumanOnBoard().Count());
         }
 
         [TestMethod]

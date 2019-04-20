@@ -7,12 +7,12 @@ namespace AvionKataDesign {
         private static Avion instance = new Avion();
         private string position;
         private List<TourDeControle> toursDeControle;
-
-        public List<Human> _humanBorded { get; private set; }
+        private List<Human> humanBorded { get; set; }
 
         private Avion(){
             position = "0,0";
             toursDeControle = new List<TourDeControle>();
+            humanBorded = new List<Human>();
         }
         public static Avion GetInstance()
         {
@@ -37,7 +37,12 @@ namespace AvionKataDesign {
 
         public void BoardingWith(List<Human> passengers)
         {
-            _humanBorded.AddRange(passengers);
+            humanBorded.AddRange(passengers);
+        }
+
+        public List<Human> DisplayHumanOnBoard()
+        {
+            return humanBorded;
         }
     }
 }
