@@ -38,7 +38,7 @@ Then the effiency equal 2
 State:
 Dev Complete work on a task and change his state
 
-Given a skill level 3 Dev withwith 5 energies
+Given a skill level 3 Dev with 5 energies
 And his state is normal
 And a working computer attach to him with an efficiency of 2
 And a Task with 12 remaining points
@@ -65,7 +65,7 @@ Then his energie equal 6
 Developer drink coffee with milk to restore his energies
 Given a developer with 1 energies
 When he drink a coffee with milk
-Then his energie equal 6
+Then his energie equal 7
 
 Developer drink coffee with sugar to restore his energies
 Given a developer with 1 energies
