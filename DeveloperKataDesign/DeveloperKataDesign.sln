@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperKataDesign", "DeveloperKataDesign\DeveloperKataDesign.csproj", "{550FAE34-0FBF-4020-84AA-C14FC4887BAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperKataDesign", "DeveloperKataDesign\DeveloperKataDesign.csproj", "{550FAE34-0FBF-4020-84AA-C14FC4887BAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperKataDesign.Test", "DeveloperKataDesign.Test\DeveloperKataDesign.Test.csproj", "{55B443DD-6629-4264-89D7-C397D85400C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperKataDesign.Test", "DeveloperKataDesign.Test\DeveloperKataDesign.Test.csproj", "{55B443DD-6629-4264-89D7-C397D85400C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeveloperKataDesignSimulator", "DeveloperKataDesignSimulator\DeveloperKataDesignSimulator.csproj", "{4C77C68E-191F-454A-BB3E-61E9FF53D51A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,18 @@ Global
 		{55B443DD-6629-4264-89D7-C397D85400C6}.Release|x64.Build.0 = Release|Any CPU
 		{55B443DD-6629-4264-89D7-C397D85400C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{55B443DD-6629-4264-89D7-C397D85400C6}.Release|x86.Build.0 = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|x64.Build.0 = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|x64.ActiveCfg = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|x64.Build.0 = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4C77C68E-191F-454A-BB3E-61E9FF53D51A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
