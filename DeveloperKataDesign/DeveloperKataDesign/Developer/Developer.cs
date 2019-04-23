@@ -73,3 +73,4 @@ namespace DeveloperKataDesign
         }
     }
 }
+// Hello :)
