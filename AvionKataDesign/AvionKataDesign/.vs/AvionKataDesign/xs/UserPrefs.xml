@@ -1,17 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Avion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Plane.cs">
     <Files>
-      <File FileName="Avion.cs" Line="7" Column="9" />
-      <File FileName="TourDeControle.cs" Line="1" Column="1" />
+      <File FileName="Plane.cs" Line="9" Column="51" />
+      <File FileName="TourDeControle.cs" Line="23" Column="41" />
       <File FileName="Human.cs" Line="27" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="AvionKataDesign" expanded="True">
+          <Node name="AvionKataDesign" expanded="True" selected="True">
             <Node name="AvionKataDesign" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Avion.cs" selected="True" />
             </Node>
           </Node>
         </State>

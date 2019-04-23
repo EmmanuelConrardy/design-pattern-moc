@@ -32,3 +32,5 @@ C:/Users/emman/source/repos/design-pattern-moc/AvionKataDesign/AvionKataDesign.T
 /Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/bin/Debug/netcoreapp2.1/AvionKataDesign.dll
 /Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/bin/Debug/netcoreapp2.1/AvionKataDesign.pdb
 /Users/lays/Workspace/C#/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/obj/Debug/netcoreapp2.1/AvionKataDesign.Test.csproj.CopyComplete
+/Users/florianmazuy/Documents/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/obj/Debug/netcoreapp2.1/AvionKataDesign.Test.dll
+/Users/florianmazuy/Documents/design-pattern-moc/AvionKataDesign/AvionKataDesign.Test/obj/Debug/netcoreapp2.1/AvionKataDesign.Test.pdb

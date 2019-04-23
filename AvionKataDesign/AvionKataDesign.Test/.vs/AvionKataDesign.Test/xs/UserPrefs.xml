@@ -1,9 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestAvion.cs">
+    <Files>
+      <File FileName="TestAvion.cs" Line="27" Column="44" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="AvionKataDesign.Test" expanded="True" selected="True" />
+          <Node name="AvionKataDesign.Test" expanded="True">
+            <Node name="AvionKataDesign.Test" expanded="True">
+              <Node name="TestAvion.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
