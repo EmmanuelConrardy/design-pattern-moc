@@ -1,8 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DeveloperKataDesign;
-using System.Collections.Generic;
-using System.Linq;
-using System;
 
 namespace DeveloperKataDesign.Test
 {

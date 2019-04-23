@@ -24,7 +24,7 @@ And a PowerSupply installed
 When we start this cumputer
 Then the computer is working
 
-Computer efficiency
+Computer scoring
 Given a computer
 And a MotherBoard 4 hearts score 0.8
 And a Hard drive score 0.2
