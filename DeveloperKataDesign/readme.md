@@ -26,12 +26,12 @@ Then the computer is working
 
 Computer efficiency
 Given a computer
-And a MotherBoard 4 hearts efficacity 0.8
-And a Hard drive efficacity 0.2
-And a Memory with two 8gb ram efficacity 0.4
-And a GraphicCard efficacity 0.2
-And a NetwokCard efficacity 0.2
-And a PowerSupply efficacity 0.2
+And a MotherBoard 4 hearts score 0.8
+And a Hard drive score 0.2
+And a Memory with two 8gb ram score 0.4
+And a GraphicCard score 0.2
+And a NetwokCard score 0.2
+And a PowerSupply score 0.2
 When we check the effiency
 Then the effiency equal 2
 
