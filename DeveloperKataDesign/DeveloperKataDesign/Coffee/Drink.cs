@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DeveloperKataDesign.Coffee
+namespace DeveloperKataDesign
 {
     public abstract class Drink
     {

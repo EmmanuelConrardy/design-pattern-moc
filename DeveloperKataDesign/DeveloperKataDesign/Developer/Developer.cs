@@ -6,7 +6,7 @@
 // Then his energies equal 3
 // And his state is low
 // And the task has 7 remaining points
-using DeveloperKataDesign.Coffee;
+using DeveloperKataDesign;
 using System;
 using System.Collections.Generic;
 
@@ -21,6 +21,12 @@ namespace DeveloperKataDesign
         public List<Drink> drinks;
         public IEnumerator<Drink> drinksEnumerator;
 
+        public bool IsDead {
+            get{
+                return energy < -10;
+            }
+        }
+
         public Developer(int skill = 1, int energy = 5)
         {
             this.skill = skill;
@@ -29,6 +35,7 @@ namespace DeveloperKataDesign
             drinksEnumerator = drinks.GetEnumerator();
             this.EvaluateState();
         }
+
 
         public void AddDrinks(List<Drink> drinks)
         {
@@ -65,12 +72,16 @@ namespace DeveloperKataDesign
 
         private void EvaluateState()
         {
-            if (energy <= 1)
+            if (energy <= 1 && CoffeeAvailable())
             {
+                Console.WriteLine($"Let's take a cup of coffee");
                 this.state = new NeedCoffee();
             }
             else if(IsLow())
             {
+                 if(!CoffeeAvailable())
+                    Console.WriteLine($"No more coffee back to work...");
+
                 this.state = new Low();
             } else
             {
@@ -81,7 +92,12 @@ namespace DeveloperKataDesign
         public void DrinkDrink()
         {
             var currentDrink = drinksEnumerator.Current;
+            if(currentDrink == null)
+            return;
+
             energy += currentDrink.GetBoost();
+            Console.WriteLine($"That a good {currentDrink.GetName()}");
+
             drinksEnumerator.MoveNext();
         }
 
@@ -90,6 +106,9 @@ namespace DeveloperKataDesign
             return this.energy < 5;
         }
 
+        private bool CoffeeAvailable(){
+            return drinksEnumerator.Current != null;
+        }
         public int GetProductivity()
         {
             return this.skill + (int) this.computer.GetScore();

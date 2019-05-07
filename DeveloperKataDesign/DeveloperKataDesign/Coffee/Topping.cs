@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DeveloperKataDesign.Coffee
+namespace DeveloperKataDesign
 {
     public abstract class Topping : Drink
     {

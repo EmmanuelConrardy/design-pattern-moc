@@ -1,4 +1,4 @@
-﻿namespace DeveloperKataDesign.Coffee
+﻿namespace DeveloperKataDesign
 {
     public class ChocolateTopping : Topping
     {

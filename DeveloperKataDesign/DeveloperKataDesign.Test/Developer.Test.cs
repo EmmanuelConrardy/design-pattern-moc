@@ -1,4 +1,4 @@
-using DeveloperKataDesign.Coffee;
+using DeveloperKataDesign;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
@@ -78,6 +78,30 @@ namespace DeveloperKataDesign.Test
             Assert.AreEqual(23, maurice.GetEnergy());
             Assert.AreEqual(4, maurice.GetRemainingPoints());
         }
+
+        [TestMethod]
+        public void DevWork_IsDead_When_Energy_Is_Below_10()
+        {
+            //Arrange
+            var maurice = new Developer(1,1);
+            var computer = CreateComputer();
+            maurice.Attach(computer);
+            maurice.Assign(new Task(int.MaxValue));
+
+            maurice.DoWork();//-1
+            maurice.DoWork();//-3
+            maurice.DoWork();//-5
+            maurice.DoWork();//-7
+            maurice.DoWork();//-9
+
+            //Act
+            maurice.DoWork();//RIP
+
+            //Assert
+            Assert.AreEqual(-11,maurice.GetEnergy());
+            Assert.IsTrue(maurice.IsDead);
+        }
+
         private Drink CreateMagicCoffee()
         {
             var expresso = new Expresso();
