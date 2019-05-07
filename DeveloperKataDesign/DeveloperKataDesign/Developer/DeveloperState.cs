@@ -22,6 +22,7 @@ namespace DeveloperKataDesign
     {
         public override int Work(Developer developer)
         {
+            developer.ReduceEnergy(2);
             return developer.GetProductivity();
         }
 
@@ -31,7 +32,17 @@ namespace DeveloperKataDesign
     {
         public override int Work(Developer developer)
         {
+            developer.ReduceEnergy(2);
             return developer.GetProductivity()/2;
+        }
+    }
+
+    public class NeedCoffee: DeveloperState
+    {
+        public override int Work(Developer developer)
+        {
+            developer.DrinkDrink();
+            return 0;
         }
     }
 }

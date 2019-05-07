@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DeveloperKataDesign.Coffee;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -84,85 +85,6 @@ namespace DeveloperKataDesign.Test
             //Assert
             Assert.AreEqual("Chantilly Chocolate Whisky Expresso", expressoWhiskyChocolateChantilly.GetName());
             Assert.AreEqual(23, result);
-        }
-    }
-
-    public class WhiskyTopping: Topping
-    {
-        public WhiskyTopping(Drink drink)
-        {
-            boost = 10;
-            name = "Whisky";
-            this.drink = drink;
-        }
-    }
-
-    public class ChocolateTopping : Topping
-    {
-        public ChocolateTopping(Drink drink)
-        {
-            boost = 5;
-            name = "Chocolate";
-            this.drink = drink;
-        }  
-    }
-
-    public class ChantillyTopping : Topping
-    {
-        public ChantillyTopping(Drink drink)
-        {
-            boost = 3;
-            name = "Chantilly";
-            this.drink = drink;
-        }
-    }
-
-    public abstract class Topping : Drink
-    {
-        protected Drink drink;
-
-        public override int GetBoost()
-        {
-            return boost + drink.GetBoost();
-        }
-
-        public override String GetName()
-        {
-            return name + " " + drink.GetName();
-        }
-    }
-
-    public class Filtered: Drink
-    {
-        public Filtered()
-        {
-            boost = 3;
-            name = "Filtered";
-        }
-    }
-
-    public class Expresso: Drink
-    {
-        public Expresso()
-        {
-            boost = 5;
-            name = "Expresso";
-        }
-    }
-
-    public abstract class Drink
-    {
-        protected int boost;
-        protected String name;
-
-        public virtual int GetBoost()
-        {
-            return this.boost;
-        }
-
-        public virtual String GetName()
-        {
-            return this.name;
         }
     }
 }

@@ -6,7 +6,9 @@
 // Then his energies equal 3
 // And his state is low
 // And the task has 7 remaining points
+using DeveloperKataDesign.Coffee;
 using System;
+using System.Collections.Generic;
 
 namespace DeveloperKataDesign
 {
@@ -16,12 +18,23 @@ namespace DeveloperKataDesign
         private int energy;
         private int skill;
         private Task task;
+        public List<Drink> drinks;
+        public IEnumerator<Drink> drinksEnumerator;
 
         public Developer(int skill = 1, int energy = 5)
         {
             this.skill = skill;
             this.energy = energy;
+            drinks = new List<Drink>();
+            drinksEnumerator = drinks.GetEnumerator();
             this.EvaluateState();
+        }
+
+        public void AddDrinks(List<Drink> drinks)
+        {
+            this.drinks.AddRange(drinks);
+            this.drinksEnumerator = this.drinks.GetEnumerator();
+            drinksEnumerator.MoveNext();
         }
 
         public void Assign(Task task)
@@ -32,7 +45,6 @@ namespace DeveloperKataDesign
         public void DoWork()
         {
             task.RemainingPoints -= this.state.Work(this);
-            this.energy -= 2;
             this.EvaluateState();
         }
 
@@ -53,13 +65,24 @@ namespace DeveloperKataDesign
 
         private void EvaluateState()
         {
-            if(IsLow())
+            if (energy <= 1)
+            {
+                this.state = new NeedCoffee();
+            }
+            else if(IsLow())
             {
                 this.state = new Low();
             } else
             {
                 this.state = new Normal();
             }
+        }
+
+        public void DrinkDrink()
+        {
+            var currentDrink = drinksEnumerator.Current;
+            energy += currentDrink.GetBoost();
+            drinksEnumerator.MoveNext();
         }
 
         private bool IsLow()
@@ -70,6 +93,11 @@ namespace DeveloperKataDesign
         public int GetProductivity()
         {
             return this.skill + (int) this.computer.GetScore();
+        }
+
+        public void ReduceEnergy(int energyToReduce)
+        {
+            energy -= energyToReduce;
         }
     }
 }

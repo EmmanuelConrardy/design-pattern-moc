@@ -1,4 +1,6 @@
+using DeveloperKataDesign.Coffee;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace DeveloperKataDesign.Test
 {
@@ -35,6 +37,54 @@ namespace DeveloperKataDesign.Test
             // Assert 
             Assert.AreEqual(1, maurice.GetEnergy());
             Assert.AreEqual(4, maurice.GetRemainingPoints());
+        }
+
+        [TestMethod]
+        public void DeveloperDrinkCoffee()
+        {
+            // Arrange
+            Developer maurice = new Developer();
+            var megaCoffee = CreateMagicCoffee();
+            var drinks = new List<Drink>();
+            drinks.Add(megaCoffee);
+            maurice.AddDrinks(drinks);
+
+            // Act
+            maurice.DrinkDrink();
+
+            // Assert
+            Assert.AreEqual(28, maurice.GetEnergy());
+        }
+
+        [TestMethod]
+        public void DevWorkAndDrinkCoffee()
+        {
+            // Arrange
+            Developer maurice = new Developer(2, 2);
+            var megaCoffee = CreateMagicCoffee();
+            var drinks = new List<Drink>();
+            drinks.Add(megaCoffee);
+            maurice.AddDrinks(drinks);
+            var computer = CreateComputer(); // With score of 10
+            maurice.Attach(computer);
+            var task = new Task(10);
+            maurice.Assign(task);
+
+            // Act
+            maurice.DoWork();
+            maurice.DoWork();
+
+            // Assert
+            Assert.AreEqual(23, maurice.GetEnergy());
+            Assert.AreEqual(4, maurice.GetRemainingPoints());
+        }
+        private Drink CreateMagicCoffee()
+        {
+            var expresso = new Expresso();
+            var expressoWhisky = new WhiskyTopping(expresso);
+            var expressoWhiskyChocolate = new ChocolateTopping(expressoWhisky);
+            var expressoWhiskyChocolateChantilly = new ChantillyTopping(expressoWhiskyChocolate);
+            return expressoWhiskyChocolateChantilly;
         }
 
         private Computer CreateComputer() {
