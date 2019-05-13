@@ -7,6 +7,9 @@ namespace DeveloperKataDesign.Test
     [TestClass]
     public class DeveloperTest
     {
+        private const int EnnergyNeedCoffee = 1;
+        private const int SkillCraftmen = 1;
+
         [TestMethod]
         public void DevGetTaskDone()
         {
@@ -83,7 +86,7 @@ namespace DeveloperKataDesign.Test
         public void DevWork_IsDead_When_Energy_Is_Below_10()
         {
             //Arrange
-            var maurice = new Developer(1,1);
+            var maurice = new Developer(1, 1);
             var computer = CreateComputer();
             maurice.Attach(computer);
             maurice.Assign(new Task(int.MaxValue));
@@ -98,7 +101,7 @@ namespace DeveloperKataDesign.Test
             maurice.DoWork();//RIP
 
             //Assert
-            Assert.AreEqual(-11,maurice.GetEnergy());
+            Assert.AreEqual(-11, maurice.GetEnergy());
             Assert.IsTrue(maurice.IsDead);
         }
 
@@ -111,7 +114,8 @@ namespace DeveloperKataDesign.Test
             return expressoWhiskyChocolateChantilly;
         }
 
-        private Computer CreateComputer() {
+        private Computer CreateComputer()
+        {
             var computer = new Computer();
             var motherBoard = new MotherBoard();
             var cpu1 = new CPU(1.5);
@@ -133,6 +137,78 @@ namespace DeveloperKataDesign.Test
             computer.AddComponent(memory);
 
             return computer;
+        }
+
+        [TestMethod]
+        public void DeveloperGoToToiletWhen3Coffees()
+        {
+            // Arrange
+            Developer maurice = new Developer();
+            var expresso = new Expresso();
+            var computer = new Computer();
+            var drinks = new List<Drink>();
+            var task = new Task(42);
+
+            drinks.Add(expresso);
+            drinks.Add(expresso);
+            drinks.Add(expresso);
+            maurice.Attach(computer);
+
+            maurice.AddDrinks(drinks);
+
+            maurice.Assign(task);
+
+            // Act
+            while (maurice.drinksEnumerator.Current != null)
+            {
+                maurice.DoWork();
+            }
+            // Assert
+            Assert.AreEqual(3, maurice.drinkTaken);
+            Assert.AreEqual(typeof(GoToToilet), maurice.CurrentState.GetType());
+        }
+
+        [TestMethod]
+        public void DeveloperDiedByArsenic()
+        {
+            // Arrange
+            Developer maurice = new Developer(SkillCraftmen, EnnergyNeedCoffee);
+            maurice.Attach(new Computer());
+            maurice.Assign(new Task(42));
+
+            var drinks = new List<Drink>();
+            var expresso = new Expresso();
+            var expressonArsenic = new ArsenicTopping(expresso);
+            drinks.Add(expressonArsenic);
+            maurice.AddDrinks(drinks);
+
+            // Act
+            maurice.DoWork();
+            maurice.DoWork();
+
+            // Assert
+            Assert.IsTrue(maurice.IsDead);
+            Assert.AreEqual(-46,maurice.GetEnergy());
+        }
+
+        [TestMethod]
+        public void DeveloperUseQuanticComputer()
+        {
+            // Arrange
+            Developer maurice = new Developer(SkillCraftmen, 5);
+            maurice.Assign(new Task(42));
+            var computer = new Computer();
+            var godMotherBoard = new GodMotherBoard();
+            var godCPU = new GodCPU();
+            godMotherBoard.AddComponent(godCPU);
+            computer.AddComponent(godMotherBoard);
+            maurice.Attach(computer);
+
+            // Act
+            maurice.DoWork();
+
+            // Assert
+            Assert.AreEqual(0, maurice.GetRemainingPoints());
         }
     }
 }

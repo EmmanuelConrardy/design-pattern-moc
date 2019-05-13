@@ -42,6 +42,17 @@ namespace DeveloperKataDesign
         public override int Work(Developer developer)
         {
             developer.DrinkDrink();
+            
+            return 0;
+        }
+    }
+
+    public class GoToToilet: DeveloperState 
+    {
+        public override int Work(Developer developer)
+        {
+            developer.drinkTaken = 0;
+            developer.AddEnergie(1);
             return 0;
         }
     }

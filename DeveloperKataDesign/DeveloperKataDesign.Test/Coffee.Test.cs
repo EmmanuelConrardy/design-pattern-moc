@@ -86,5 +86,34 @@ namespace DeveloperKataDesign.Test
             Assert.AreEqual("Chantilly Chocolate Whisky Expresso", expressoWhiskyChocolateChantilly.GetName());
             Assert.AreEqual(23, result);
         }
+        
+        [TestMethod]
+        public void ExpressoWithArsenic()
+        {
+            //Arrange
+            var expresso = new Expresso();
+            var expressoArsenic = new ArsenicTopping(expresso);
+
+            //Act
+            var result = expressoArsenic.GetBoost();
+
+            //Assert
+            Assert.AreEqual("Arsenic Expresso", expressoArsenic.GetName());
+            Assert.AreEqual(-45, result);
+        }
+
+        [TestMethod]
+        public void ExpressoWithArsenicSong()
+        {
+            //Arrange
+            var expresso = new Expresso();
+            var expressoArsenic = new ArsenicTopping(expresso);
+
+            //Act
+            var result = expressoArsenic.Song();
+
+            //Assert
+            Assert.AreEqual("Run https://www.youtube.com/watch?v=-G3MLjqicC8", result);
+        }
     }
 }

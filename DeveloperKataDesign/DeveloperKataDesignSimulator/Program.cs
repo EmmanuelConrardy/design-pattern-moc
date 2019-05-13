@@ -28,7 +28,7 @@ namespace DeveloperKataDesignSimulator
             Console.WriteLine("good! now press any button and maurice will go to his desk");
             Console.ReadKey();
             Console.WriteLine();
-            Console.WriteLine("Maurice :\"I'm going on a andventure !!\"");
+            Console.WriteLine("Maurice :\"I'm going on an adventure !!\"");
             
             //Attach computer
             Console.WriteLine("Maurice need a computer before starting his journey (1=MS Surface Book, 2=Macbook Pro");

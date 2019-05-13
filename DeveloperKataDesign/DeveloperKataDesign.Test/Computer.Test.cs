@@ -67,7 +67,23 @@ namespace DeveloperKataDesign.Test
             var result = computer.GetScore();
             // Assert
             Assert.AreEqual(10, result);
+        }
 
+        [TestMethod]
+        public void ComputerQuanticShouldKnowTheAnswer()
+        {
+            // Arrange
+            var computer = new Computer();
+            var godMotherBoard = new GodMotherBoard();
+            var godCPU = new GodCPU();
+            godMotherBoard.AddComponent(godCPU);
+            computer.AddComponent(godMotherBoard);
+
+            // Act
+            var result = computer.GetScore();
+
+            // Assert
+            Assert.AreEqual(int.MaxValue, result);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace DeveloperKataDesign
 {
     public class Developer {
         private DeveloperState state { get; set; }
+        
         private Computer computer;
         private int energy;
         private int skill;
@@ -21,9 +22,18 @@ namespace DeveloperKataDesign
         public List<Drink> drinks;
         public IEnumerator<Drink> drinksEnumerator;
 
+        public int drinkTaken = 0;
+
         public bool IsDead {
             get{
                 return energy < -10;
+            }
+        }
+
+        public DeveloperState CurrentState 
+        {
+            get {
+                return state;
             }
         }
 
@@ -35,7 +45,6 @@ namespace DeveloperKataDesign
             drinksEnumerator = drinks.GetEnumerator();
             this.EvaluateState();
         }
-
 
         public void AddDrinks(List<Drink> drinks)
         {
@@ -87,6 +96,13 @@ namespace DeveloperKataDesign
             {
                 this.state = new Normal();
             }
+
+               if (drinkTaken >= 3)
+            {
+                Console.WriteLine($"Let's take a pee");
+                this.state = new GoToToilet();
+
+            }
         }
 
         public void DrinkDrink()
@@ -97,8 +113,13 @@ namespace DeveloperKataDesign
 
             energy += currentDrink.GetBoost();
             Console.WriteLine($"That a good {currentDrink.GetName()}");
-
+            drinkTaken++;
             drinksEnumerator.MoveNext();
+        }
+
+        public void AddEnergie(int energy)
+        {
+            this.energy += energy;
         }
 
         private bool IsLow()
