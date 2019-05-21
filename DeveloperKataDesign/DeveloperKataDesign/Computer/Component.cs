@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+//Composite
 namespace DeveloperKataDesign
 {
     public abstract class Component {
@@ -14,7 +15,13 @@ namespace DeveloperKataDesign
         }
 
         public void AddComponent(Component component) {
-            components.Add(component);
+
+            if(component != null){
+                components.Add(component);
+            }else{
+                Console.WriteLine("ERROR");
+            }
+          
         }
 
         public List<Component> GetComponents() {
@@ -45,7 +52,5 @@ namespace DeveloperKataDesign
             }
             return score;
         }
-
-        //getChildren
     }
 }

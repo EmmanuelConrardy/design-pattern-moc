@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+//Decorator
 namespace DeveloperKataDesign
 {
     public abstract class Drink

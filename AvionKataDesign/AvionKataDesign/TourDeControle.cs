@@ -1,5 +1,6 @@
 using System;
 
+//Observeur (Observer)
 namespace AvionKataDesign {
     public class TourDeControle {
 

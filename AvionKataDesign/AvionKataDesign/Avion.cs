@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+//Singleton
+//Observeur le "Sujet"
 namespace AvionKataDesign {
     public class Avion {
         private static Avion instance = new Avion();
