@@ -16,9 +16,11 @@ We should be able to extract a Report from all this area to know the Status of t
 
 Note from the tech lead : "The release is near you have to code the report of the city but we don't want you to interfer with our testing we must respect the scheduled !"
 
+When needed Sergent can be Educator.
+
 Then our City need lot of 100 Buildings and at least 300 Houses.
 
-When needed Sergent can be Educator.
+
 
 
 Pattern used : Visitor, Adapter, Prototype
