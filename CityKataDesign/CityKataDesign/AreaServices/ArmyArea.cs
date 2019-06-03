@@ -1,13 +1,16 @@
 using System.Drawing;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace CityKataDesign
 {
-    public class ArmyArea : IArmyService
+    public class ArmyArea : IArmyService, Visitable
     {
         public ArmyArea(string name, int size, List<Sergent> sergents)
         {
             Name = name;
             Size = size;
-            _sergents = sergent;
+            _sergents = sergents;
         }
         public string Name {get; internal set;}
         public int Size {get; set;}
@@ -16,8 +19,10 @@ namespace CityKataDesign
         public List<Sergent> GetSergents(){
             return _sergents;
         }
-        //Report
-
+        
+        public void Accept(IVisitor visitor) {
+            visitor.Visit(this);
+        }
     }
     public interface IArmyService{
         List<Sergent> GetSergents();

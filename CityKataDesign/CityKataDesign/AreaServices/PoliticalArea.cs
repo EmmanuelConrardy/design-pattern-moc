@@ -1,6 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace CityKataDesign
 {
-    public class PoliticalArea
+    public class PoliticalArea : Visitable
     {
         public PoliticalArea(string partyName, string gouvernor, List<string> meetings)
         {
@@ -12,6 +15,8 @@ namespace CityKataDesign
         public string Gouvernor {get; set;}
         public List<string> Meetings {get; set;}
 
-        //report
+        public void Accept(IVisitor visitor) {
+            visitor.Visit(this);
+        }
     }
 }

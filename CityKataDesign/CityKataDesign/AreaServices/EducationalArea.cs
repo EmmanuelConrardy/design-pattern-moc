@@ -1,6 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace CityKataDesign
 {
-    public class EducationalArea
+    public class EducationalArea : Visitable
     {
         public EducationalArea(string name, string director, List<Educator> educators)
         {
@@ -19,8 +22,9 @@ namespace CityKataDesign
             return _educators;
         }
 
-        //Report
-
+        public void Accept(IVisitor visitor) {
+            visitor.Visit(this);
+        }
     }
     public interface IEducationalService{
         List<Sergent> GetSergents();
@@ -30,7 +34,7 @@ namespace CityKataDesign
     {
         public string Name {get; set;}
         public int Degree {get; set;}
-        public Sergent(string name, int Degree = 1)
+        public Educator(string name, int degree = 1)
         {
             Name = name;
             Degree = degree; 
