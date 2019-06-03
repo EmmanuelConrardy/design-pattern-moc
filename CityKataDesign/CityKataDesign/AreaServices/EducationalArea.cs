@@ -27,7 +27,7 @@ namespace CityKataDesign
         }
     }
     public interface IEducationalService{
-        List<Sergent> GetSergents();
+        List<Educator> GetEducators();
     }
 
     public class Educator
